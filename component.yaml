@@ -1,0 +1,51 @@
+platform: iOS
+buildPlatform:
+displayName: "Send an App version to Appstore "
+description: "Select Appstore connect settings for the process"
+inputs:
+- key: "AC_XCODE_LIST_DIR"
+  defaultValue: "$AC_XCODE_LIST_DIR"
+  isRequired: true
+  title: Xcode List Directory
+  description: "Specifies the xcode folder list directory. Current xcode folder structure examples : /Applications/Xcode/10.3/Xcode or /Applications/Xcode/11.0/Xcode"
+  helpText:
+- key: "AC_XCODE_VERSION"
+  defaultValue: "$AC_XCODE_VERSION"
+  isRequired: true
+  title: Xcode Version
+  description: Specifies the xcode version.
+  helpText:
+- key: "AC_STACK_TYPE"
+  defaultValue: "TestFlight"
+  isRequired: true
+  editorType: select
+  title: Stack type for submit
+  description: "Select an appstore connect channel."
+  options: "Alpha,Beta,Production,Internal,TestFlight,Release"
+  helpText:
+- key: "AC_STORE_CREDENTIAL_ID"
+  defaultValue: ""
+  isRequired: true
+  editorType: select
+  title: Which Appstore api connection will be used
+  description: "Select a store credential, managed in Integrations."
+  options: "ServerCallRequiredToGetValues"
+  helpText:
+- key: "AC_APPSTORE_API_KEY_TYPE"
+  defaultValue: ""
+  isRequired: true
+  editorType: select
+  title: Stack type for submit
+  description: "Select a store api type App Specific or Connect Api ?"
+  options: "AppStoreConnectApiConnection,ApplicationSpecificPasswordConnection"
+  helpText:
+- key: "AC_RELEASE_NOTES"
+  editorType: textarea
+  isRequired: false
+  title: Release notes for the Submission
+  description: Filling that area may effect appstore submission process.
+  helpText:
+processFilename: bash
+processArguments: '%AC_STEP_TEMP%/main.sh'
+files:
+- "main.sh"
