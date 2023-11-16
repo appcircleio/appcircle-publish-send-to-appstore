@@ -35,7 +35,7 @@ inputs:
   defaultValue: ""
   isRequired: true
   editorType: select
-  title: Stack type for submit
+  title: Appstore Connect Api Type
   description: "Select a store api type App Specific or Connect Api ?"
   options: "AppStoreConnectApiConnection,ApplicationSpecificPasswordConnection"
   helpText:
