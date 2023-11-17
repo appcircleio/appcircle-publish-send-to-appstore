@@ -24,7 +24,7 @@ inputs:
   options: "Alpha,Beta,Production,Internal,TestFlight,Release"
   helpText:
 - key: "AC_STORE_CREDENTIAL_ID"
-  defaultValue: ""
+  defaultValue: "Select"
   isRequired: true
   editorType: select
   title: Which Appstore api connection will be used
