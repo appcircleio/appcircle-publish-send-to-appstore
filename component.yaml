@@ -6,7 +6,7 @@ marketPlace: "AppleAppStore"
 inputs:
 - key: "AC_XCODE_LIST_DIR"
   defaultValue: "$AC_XCODE_LIST_DIR"
-  isRequired: true
+  isRequired: false
   title: Xcode List Directory
   description: "Specifies the xcode folder list directory. Current xcode folder structure examples : /Applications/Xcode/10.3/Xcode or /Applications/Xcode/11.0/Xcode"
   helpText:
@@ -18,7 +18,7 @@ inputs:
   helpText:
 - key: "AC_STACK_TYPE"
   defaultValue: "TestFlight"
-  isRequired: true
+  isRequired: false
   editorType: select
   title: Stack type for submit
   description: "Select an appstore connect channel."
@@ -26,7 +26,7 @@ inputs:
   helpText:
 - key: "AC_STORE_CREDENTIAL_ID"
   defaultValue: "Select"
-  isRequired: true
+  isRequired: false
   editorType: select
   title: Which Appstore api connection will be used
   description: "Select a store credential, managed in Integrations."
@@ -34,7 +34,7 @@ inputs:
   helpText:
 - key: "AC_APPSTORE_API_KEY_TYPE"
   defaultValue: ""
-  isRequired: true
+  isRequired: false
   editorType: select
   title: Appstore Connect Api Type
   description: "Select a store api type App Specific or Connect Api ?"
