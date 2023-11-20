@@ -2,6 +2,7 @@ platform: iOS
 buildPlatform:
 displayName: "Send an App version to Appstore "
 description: "Select Appstore connect settings for the process"
+marketPlace: "AppleAppStore"
 inputs:
 - key: "AC_XCODE_LIST_DIR"
   defaultValue: "$AC_XCODE_LIST_DIR"
