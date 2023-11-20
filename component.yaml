@@ -22,7 +22,7 @@ inputs:
   editorType: select
   title: Stack type for submit
   description: "Select an appstore connect channel."
-  options: "Alpha,Beta,Production,Internal,TestFlight,Release"
+  options: "TestFlight,Release"
   helpText:
 - key: "AC_STORE_CREDENTIAL_ID"
   defaultValue: "Select"
