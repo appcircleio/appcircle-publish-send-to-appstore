@@ -21,9 +21,8 @@
       curl -O https://appcircle-common.s3-eu-west-1.amazonaws.com/apple/iTMSTransporter-2.1.0.pkg
       sudo installer -pkg iTMSTransporter-2.1.0.pkg -target /
       sudo chown -R $(whoami): /usr/local/itms
-          
-      if [ $appleStoreSubmitApiType == 0 || $appleStoreSubmitApiType=="ApplicationSpecificPasswordConnection" ]   #ApplicationSpecificPasswordConnection
-      then
+
+      if [ "$appleStoreSubmitApiType" == 0 ] || [ "$appleStoreSubmitApiType" == "ApplicationSpecificPasswordConnection" ]; then
       
         mkdir filename.itmsp
 
@@ -92,8 +91,8 @@
         fi
       fi
       
-      if [ $appleStoreSubmitApiType == 1 || $appleStoreSubmitApiType=="AppStoreConnectApiConnection" ]   #AppStoreConnectApiConnection
-      then
+     if [ "$appleStoreSubmitApiType" == 1 ] || [ "$appleStoreSubmitApiType" == "AppStoreConnectApiConnection" ]; then
+ 
         #gem install fastlane -NV
         if [[ "$AC_XCODE_VERSION" == "13."* ]];
             then
