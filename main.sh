@@ -1,10 +1,19 @@
 #!/bin/bash
-set -e
-# Modified version of https://github.com/HDB-Li/LLIconVersioning
  
       export LC_ALL=en_US.UTF-8
       export LANG=en_US.UTF-8
       export LANGUAGE=en_US.UTF-8
+
+      echo "IPAFileName:$IPAFileName"
+      echo "IPAFileUrl:$IPAFileUrl"
+      echo "AppleId:$AppleId"
+      echo "BundleId:$BundleId"
+      echo "AppleUserName:$AppleUserName"
+      echo "ApplicationSpecificPassword:$ApplicationSpecificPassword"
+      echo "AppStoreConnectApiKey:$AppStoreConnectApiKey"
+      echo "AppStoreConnectApiKeyFileName:$AppStoreConnectApiKeyFileName"
+      echo "appleStoreSubmitApiType:$appleStoreSubmitApiType"
+      
       locale
       curl -o "./$IPAFileName" -k $IPAFileUrl
       #cat "./$IPAFileName"
