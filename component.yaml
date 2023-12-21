@@ -11,7 +11,9 @@ inputs:
   description: "Specifies the xcode folder list directory. Current xcode folder structure examples : /Applications/Xcode/10.3/Xcode or /Applications/Xcode/11.0/Xcode"
   helpText:
 - key: "AC_XCODE_VERSION"
-  defaultValue: "$AC_XCODE_VERSION"
+  defaultValue: "15.2.x"
+  editorType: select
+  options: "15.2.x,15.1.x,15.0.x,14.3.x,14.2.x,14.1.x,14.0.x,13.4.x,13.3.x,13.2.x,13.1.x,13.0.x"
   isRequired: true
   title: Xcode Version
   description: Specifies the xcode version.
