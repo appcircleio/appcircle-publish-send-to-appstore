@@ -22,8 +22,8 @@ inputs:
   defaultValue: "TestFlight"
   isRequired: false
   editorType: select
-  title: Stack type for submit
-  description: "Select an appstore connect channel."
+  title: Stage type for submit
+  description: "Select an Appstore Connect stage."
   options: "TestFlight,Release"
   helpText:
 - key: "AC_STORE_CREDENTIAL_ID"
@@ -33,14 +33,6 @@ inputs:
   title: Which Appstore Api Key will be used
   description: "Select a store credential, managed in Integrations."
   options: "ServerCallRequiredToGetValues"
-  helpText:
-- key: "AC_APPSTORE_API_KEY_TYPE"
-  defaultValue: "AppStoreConnectApiConnection"
-  isRequired: false
-  editorType: select
-  title: Appstore Connect Api Type
-  description: "Select a store api type App Specific or Connect Api ?"
-  options: "AppStoreConnectApiConnection,ApplicationSpecificPasswordConnection"
   helpText:
 - key: "AC_RELEASE_NOTES"
   editorType: textarea
