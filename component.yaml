@@ -30,7 +30,7 @@ inputs:
   defaultValue: ""
   isRequired: true
   editorType: select
-  title: Which Appstore Api Key will be used
+  title: Select an Appstore Api Key
   description: "Select a store credential, managed in Integrations."
   options: "ServerCallRequiredToGetValues"
   helpText:
