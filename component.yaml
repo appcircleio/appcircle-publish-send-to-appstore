@@ -27,8 +27,8 @@ inputs:
   options: "TestFlight,Release"
   helpText:
 - key: "AC_STORE_CREDENTIAL_ID"
-  defaultValue: "Select"
-  isRequired: false
+  defaultValue: ""
+  isRequired: true
   editorType: select
   title: Which Appstore Api Key will be used
   description: "Select a store credential, managed in Integrations."
