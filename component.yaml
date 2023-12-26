@@ -30,12 +30,12 @@ inputs:
   defaultValue: "Select"
   isRequired: false
   editorType: select
-  title: Which Appstore api connection will be used
+  title: Which Appstore Api Key will be used
   description: "Select a store credential, managed in Integrations."
   options: "ServerCallRequiredToGetValues"
   helpText:
 - key: "AC_APPSTORE_API_KEY_TYPE"
-  defaultValue: ""
+  defaultValue: "AppStoreConnectApiConnection"
   isRequired: false
   editorType: select
   title: Appstore Connect Api Type
