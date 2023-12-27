@@ -1,14 +1,14 @@
 platform: iOS
 buildPlatform:
-displayName: "Send an App version to Appstore "
-description: "Select Appstore connect settings for the process"
+displayName: "Send an App version to App Store "
+description: "Select App Store Connect settings for the process"
 marketPlace: "AppleAppStore"
 inputs:
 - key: "AC_XCODE_LIST_DIR"
   defaultValue: "$AC_XCODE_LIST_DIR"
   isRequired: false
   title: Xcode List Directory
-  description: "Specifies the xcode folder list directory. Current xcode folder structure examples : /Applications/Xcode/10.3/Xcode or /Applications/Xcode/11.0/Xcode"
+  description: "Specifies the Xcode folder list directory. Current Xcode folder structure examples : /Applications/Xcode/10.3/Xcode or /Applications/Xcode/11.0/Xcode"
   helpText:
 - key: "AC_XCODE_VERSION"
   defaultValue: "15.2.x"
@@ -16,21 +16,21 @@ inputs:
   options: "15.2.x,15.1.x,15.0.x,14.3.x,14.2.x,14.1.x,14.0.x,13.4.x,13.3.x,13.2.x,13.1.x,13.0.x"
   isRequired: true
   title: Xcode Version
-  description: Specifies the xcode version.
+  description: Specifies the Xcode version.
   helpText:
 - key: "AC_STACK_TYPE"
   defaultValue: "TestFlight"
   isRequired: false
   editorType: select
   title: Stage type for submit
-  description: "Select an Appstore Connect stage."
+  description: "Select Release for App Store, TestFlight for Test Flight submissions."
   options: "TestFlight,Release"
   helpText:
 - key: "AC_STORE_CREDENTIAL_ID"
   defaultValue: ""
   isRequired: true
   editorType: select
-  title: Select an Appstore Api Key
+  title: Select an App Store Connect API Key
   description: "Select a store credential, managed in Integrations."
   options: "ServerCallRequiredToGetValues"
   helpText:
@@ -38,7 +38,7 @@ inputs:
   editorType: textarea
   isRequired: false
   title: Release notes for the Submission
-  description: Filling that area may effect appstore submission process.
+  description: Filling that area may effect App Store submission process.
   helpText:
 processFilename: bash
 processArguments: '%AC_STEP_TEMP%/main.sh'
