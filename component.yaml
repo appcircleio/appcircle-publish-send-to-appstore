@@ -1,6 +1,6 @@
 platform: iOS
 buildPlatform:
-displayName: "Send to TestFlight"
+displayName: "Send to App Store"
 description: "Select App Store Connect settings for the process"
 marketPlace: "AppleAppStore"
 inputs:
@@ -25,6 +25,14 @@ inputs:
   title: Select an App Store Connect API Key
   description: "Select a store credential, managed in Integrations."
   options: "ServerCallRequiredToGetValues"
+  helpText:
+- key: "AC_STACK_TYPE"
+  defaultValue: "TestFlight"
+  isRequired: false
+  editorType: select
+  title: Stage type for submit
+  description: "App Store or TestFlight stages."
+  options: "Release,TestFlight"
   helpText:
 - key: "AC_RELEASE_NOTES"
   editorType: textarea
