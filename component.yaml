@@ -1,6 +1,6 @@
 platform: iOS
 buildPlatform:
-displayName: "Send an App version to App Store "
+displayName: "Send an App Version to TestFlight"
 description: "Select App Store Connect settings for the process"
 marketPlace: "AppleAppStore"
 inputs:
@@ -17,14 +17,6 @@ inputs:
   isRequired: true
   title: Xcode Version
   description: Specifies the Xcode version.
-  helpText:
-- key: "AC_STACK_TYPE"
-  defaultValue: "TestFlight"
-  isRequired: false
-  editorType: select
-  title: Stage type for submit
-  description: "Select Release for App Store, TestFlight for Test Flight submissions."
-  options: "TestFlight,Release"
   helpText:
 - key: "AC_STORE_CREDENTIAL_ID"
   defaultValue: ""
