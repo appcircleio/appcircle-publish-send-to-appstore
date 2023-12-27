@@ -1,6 +1,6 @@
 platform: iOS
 buildPlatform:
-displayName: "Send an App Version to TestFlight"
+displayName: "Send to TestFlight"
 description: "Select App Store Connect settings for the process"
 marketPlace: "AppleAppStore"
 inputs:
