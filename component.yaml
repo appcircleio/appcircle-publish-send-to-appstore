@@ -1,4 +1,5 @@
 platform: iOS
+purpose: Publish
 buildPlatform:
 displayName: "Send to App Store"
 description: "Upload binary for App Store publishing"
