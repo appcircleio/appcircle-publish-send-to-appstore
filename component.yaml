@@ -19,14 +19,6 @@ inputs:
   title: Xcode Version
   description: Specifies the Xcode version.
   helpText:
-- key: "AC_STORE_CREDENTIAL_ID"
-  defaultValue: ""
-  isRequired: true
-  editorType: select
-  title: Select an App Store Connect API Key
-  description: "Select a store credential, managed in Integrations."
-  options: "ServerCallRequiredToGetValues"
-  helpText:
 - key: "AC_STACK_TYPE"
   defaultValue: "TestFlight"
   isRequired: false
