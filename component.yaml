@@ -20,7 +20,7 @@ inputs:
   description: Specifies the Xcode version.
   helpText:
 - key: "AC_STACK_TYPE"
-  defaultValue: "TestFlight"
+  defaultValue: "Release"
   isRequired: false
   editorType: select
   title: Stage type for submit
