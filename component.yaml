@@ -28,10 +28,11 @@ inputs:
   options: "Release,TestFlight"
   helpText:
 - key: "AC_RELEASE_NOTES"
+  defaultValue: "$AC_RELEASE_NOTES"
   editorType: textarea
   isRequired: false
-  title: Release notes for the Submission
-  description: Filling that area may effect App Store submission process.
+  title: What to Test field in TestFlight
+  description: use special $AC_RELEASE_NOTES variable to send App Version's current release note.
   helpText:
 processFilename: bash
 processArguments: '%AC_STEP_TEMP%/main.sh'
